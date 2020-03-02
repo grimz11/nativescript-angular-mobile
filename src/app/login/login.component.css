@@ -1,0 +1,24 @@
+.loginfield {
+  margin-top: 5%;
+  border-color: #dedede;
+  border-width: 1;
+  width: 90%;
+  padding: 15 5 25 5;
+  border-radius: 5;
+  margin-bottom: 20;
+}
+.email, .password {
+  padding: 10;
+}
+.btn-login {
+  width: 96%;
+}
+
+.btn-login Button {
+  border-radius: 30;
+}
+.logo-text {
+  font-size: 40;
+  margin-top: 20%;
+  text-align: center;
+}

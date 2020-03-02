@@ -1,0 +1,11 @@
+<StackLayout>
+  <Label text="Groceries" class="logo-text"></Label>
+</StackLayout>
+<StackLayout class="loginfield">
+  <TextField hint="Email Address" [(ngModel)]="user.email" keyboardType="Email" autocorrect="false" autocapitalizationType="none" class="email"></TextField>
+  <TextField class="password" hint="Password" secure="true"></TextField>
+</StackLayout >
+<StackLayout class="btn-login">
+  <Button [text]="isLogin ? 'Sign in' : 'Sign up'" (tap)="submit()" ></Button>
+  <Button [text]="isLogin ? 'Sign up': 'Back to login'" (tap)="toggleSignDisplay()"></Button>
+</StackLayout>
