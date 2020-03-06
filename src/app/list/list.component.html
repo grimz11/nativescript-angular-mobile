@@ -1,1 +1,24 @@
-<Label text="list component here"></Label>
+<StackLayout class="list-parent">
+  <StackLayout  class="list-stack">
+    <label text="Grocery List" horizontalAlignment="center" class="list-title"></label>
+    <SearchBar hint="Search item..."
+      [(ngModel)]="searchPhrase" (textChange)="onTextChanged($event)" 
+      (clear)="onClear()" (loaded)="searchBarLoaded($event)">
+    </SearchBar>
+    <Button text="Search" (tap)="searchPhrase ? searchTap() : ''"></Button>
+    <Label class="search-result" [text]=""></Label>
+  </StackLayout>
+  <GridLayout class="list-grid" id="focus-grid">
+    <ListView [items]="fetchedGrocery" class="small-spacing"> 
+      <ng-template let-item="item">
+        <FlexboxLayout alignItems="center" justifyContent="space-between" >
+          <label [text]="item.name" class="medium-spacing"></label>
+          <label [text]="'$' + item.sale_price" class="medium-spacing" ></label>
+          <label text="&#xf290;" class="medium-spacing fas addIcon" (tap)="addToBag()"></label>
+        </FlexboxLayout>
+      </ng-template>
+      <Button text="Add"></Button>
+    </ListView>
+  </GridLayout>
+  <!-- <app-menu></app-menu> -->
+</StackLayout>

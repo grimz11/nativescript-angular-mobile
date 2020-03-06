@@ -10,6 +10,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import {NativeScriptRouterModule} from 'nativescript-angular/router';
 import {routes, navigatableComponents} from "./app.routing";
+import { MenuComponent } from "./menu/menu.component";
 
 @NgModule({
     bootstrap: [
@@ -24,6 +25,7 @@ import {routes, navigatableComponents} from "./app.routing";
     ],
     declarations: [
         AppComponent,
+        MenuComponent,
         ...navigatableComponents
     ],
     providers: [],

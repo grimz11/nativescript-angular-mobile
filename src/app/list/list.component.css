@@ -1,0 +1,30 @@
+.list-parent {
+  /* width: 95%; */
+}
+.small-spacing {
+  margin: 5;
+  /* margin-top: 40; */
+}
+.medium-spacing {
+  margin: 10;
+  font-size: 18;
+}
+.list-stack {
+  margin-top: 5%;
+}
+/* .list-grid {
+  margin-top: 10%;
+} */
+.list-title {
+  font-size: 22;
+}
+.search-result {
+  margin-top: 5;
+  /* margin-bottom: 5; */
+  margin-left: 28;
+}
+.addIcon {
+  color: orangered;
+  font-size: 20;
+  margin: auto;
+}

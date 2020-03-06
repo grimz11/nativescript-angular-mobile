@@ -6,12 +6,20 @@
   padding: 15 5 25 5;
   border-radius: 5;
   margin-bottom: 20;
+  
+}
+.loginfield TextField {
+  color: #000;
 }
 .email, .password {
   padding: 10;
 }
 .btn-login {
   width: 96%;
+}
+.btn-login .submit{
+  background-color: orangered;
+  color: #fff;
 }
 
 .btn-login Button {
